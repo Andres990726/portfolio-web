@@ -1,0 +1,91 @@
+<section>
+  <h2>Educación</h2>
+  <ul>
+    <li>
+      <div class="content-education">
+        <article>
+          <header>
+            <div>
+              <h3>Universidad del Cauca</h3>
+              <h4>Ingeniería de sistemas</h4>
+            </div>
+            <time>2018 - Actual</time>
+          </header>
+          <footer>
+            <p>Planeación y desarrollo de software de alta calidad</p>
+          </footer>
+        </article>
+        <img src="/university.svg" />
+      </div>
+      <hr />
+    </li>
+    <li>
+      <div class="content-education">
+        <article>
+          <header>
+            <div>
+              <h3>Instituto educativo Técnico Industrial</h3>
+              <h4>Bachiller</h4>
+            </div>
+            <time>2014 - 2016</time>
+          </header>
+          <footer>
+            <p>Educación básica</p>
+          </footer>
+        </article>
+        <img src="/collage.svg" />
+      </div>
+      <hr />
+    </li>
+  </ul>
+</section>
+
+<style>
+  ul {
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+  .content-education {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    align-items: center;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    color: #0f1b61;
+    background-color: #0f1b61;
+    opacity: 0.275;
+  }
+  img {
+    max-width: 250px;
+    max-height: 270px;
+  }
+  article {
+    width: 50vw;
+    text-align: justify;
+  }
+  article h3 {
+    font-weight: 600;
+    font-size: 25px;
+    margin: 0;
+  }
+  article h4 {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+  }
+  time {
+    font-size: 1rem;
+  }
+</style>

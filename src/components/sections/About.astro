@@ -5,20 +5,40 @@ import { basics } from "@cv";
 ---
 
 <section>
-  <h2>Sobre mí</h2>
-  <p>
-    Soy un apasionado desarrollador frontend con más de un año de experiencia en
-    la industria, cuyo interés y habilidades se extienden más allá de la
-    interfaz de usuario. Mi enfoque se centra en la creación de experiencias de
-    usuario excepcionales y la optimización de aplicaciones en el lado del
-    cliente. Mi bagaje incluye conocimientos sólidos en el desarrollo frontend y
-    backend, así como en el aseguramiento de calidad.
-  </p>
+  <div class="content">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy un apasionado desarrollador frontend con más de un año de experiencia
+      en la industria, cuyo interés y habilidades se extienden más allá de la
+      interfaz de usuario. Mi enfoque se centra en la creación de experiencias
+      de usuario excepcionales y la optimización de aplicaciones en el lado del
+      cliente. Mi bagaje incluye conocimientos sólidos en el desarrollo frontend
+      y backend, así como en el aseguramiento de calidad.
+    </p>
+  </div><div class="dots"></div>
 </section>
 
 <style>
+  section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
   h2 {
-    font-size: 60px;
-    font-weight: 500;
+    margin-top: 0;
+  }
+  .content {
+    max-width: 40vw;
+  }
+  .content p {
+    text-align: justify;
+    margin: 0;
+  }
+  .dots {
+    width: 30vw;
+    height: auto;
+    background-image: url("/descarga.svg");
+    background-repeat: repeat;
+    background-size: 12px 12px;
   }
 </style>

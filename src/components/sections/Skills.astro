@@ -1,0 +1,124 @@
+<section>
+  <h2>Skills</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="spring.svg" />
+          <h3>SpringBoot</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="html.svg" />
+          <h3>HTML5</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="ts.png" />
+          <h3>Typescript</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="java.png" />
+          <h3>Java</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="git.png" />
+          <h3>Git</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="css.svg" />
+          <h3>CSS</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="js.png" />
+          <h3>Javascript</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="github.svg" />
+          <h3>GitHub</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="react.svg" />
+          <h3>Ract</h3>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="next.svg" />
+          <h3>Next js</h3>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+<script>
+  // Core de Swiper y estilos
+  import Swiper from "swiper";
+  import "swiper/css";
+  // Módulo Navigation de Swiper y estilos
+  import { Navigation } from "swiper/modules";
+  import "swiper/css/navigation";
+
+  // Configurar Swiper
+  const swiper = new Swiper(".swiper", {
+    modules: [Navigation],
+    loop: true,
+    slidesPerView: 5,
+    spaceBetween: 30,
+    navigation: {
+      prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next",
+    },
+  });
+</script>
+<style>
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    margin: 20px;
+    transition: transform 0.3s ease;
+    /* border: 2px solid #7f00e0; */
+  }
+
+  .card:hover {
+    transform: scale(
+      1.5
+    ); /* Escala el contenido al 110% de su tamaño original */
+  }
+  .card img {
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  .card h3 {
+    margin: 0; /* Elimina el margen predeterminado del h3 */
+    text-align: center; /* Centra el texto */
+  }
+
+  .swiper-button-prev {
+    color: #7f00e0;
+  }
+  .swiper-button-next {
+    color: #7f00e0;
+  }
+</style>
